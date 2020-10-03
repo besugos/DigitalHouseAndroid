@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Aula16-Ex1</string>
     <string name="signup"><u>Sign-up</u></string>
-    <string name="meuTexto"><u>Com Underline</u></string>
+    <string name="botao"><b>LOGIN</b></string>
 </resources>
