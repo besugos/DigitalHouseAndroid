@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/size20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/horas_trabalhadas"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font20"
+
+        />
+
+    <EditText
+        android:id="@+id/edtHoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/_180"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="@dimen/size10"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size30"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/valor_da_hora"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font20"
+        />
+
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/_15"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="@dimen/size10"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size40"
+        android:layout_marginBottom="@dimen/size70"
+        android:background="@color/colorBlue"
+        android:fontFamily="sans-serif"
+        android:text="@string/calcular"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font18" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_xxxx_xx"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/font40"
+        />
+
+</LinearLayout>

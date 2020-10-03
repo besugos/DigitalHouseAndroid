@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aula16Ex4SalarioHora</string>
+    <string name="horas_trabalhadas">Horas Trabalhadas</string>
+    <string name="_180">180</string>
+    <string name="_15">15</string>
+    <string name="valor_da_hora">Valor da Hora</string>
+    <string name="calcular">Calcular</string>
+    <string name="r_xxxx_xx">R$ XXXX,XX</string>
+</resources>
