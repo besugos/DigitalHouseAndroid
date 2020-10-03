@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="30sp"
+    android:background="@color/colorWhite"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="sans-serif-black"
+
+        />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_o_seu_nome"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnExibir"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exibir"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtMeuNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <TextView
+        android:id="@+id/txtNomeFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        />
+
+</LinearLayout>
