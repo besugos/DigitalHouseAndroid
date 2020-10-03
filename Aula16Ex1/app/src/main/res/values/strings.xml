@@ -2,4 +2,7 @@
     <string name="app_name">Aula16-Ex1</string>
     <string name="signup"><u>Sign-up</u></string>
     <string name="botao"><b>LOGIN</b></string>
+    <string name="foobar">FOOBAR</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>

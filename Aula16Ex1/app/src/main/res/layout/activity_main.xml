@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:text="FOOBAR"
+        android:text="@string/foobar"
         android:textColor="#ffffff"
         android:textSize="32sp"
         android:layout_margin="100dp"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:textColorHint="#ffffff"
         android:textColor="#fff"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:imeOptions="actionNext"
         />
@@ -38,10 +38,9 @@
         android:textColorHint="#ffffff"
         android:textColor="#fff"
         android:layout_marginTop="8dp"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:imeOptions="actionDone"
-
         />
 
     <Button
