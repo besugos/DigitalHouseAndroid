@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/size20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/celsius"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font20"
+        />
+
+    <EditText
+        android:id="@+id/edtCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digiteTemp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="@dimen/size20"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/converter"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@color/colorBlue"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/font18"
+        android:layout_marginTop="@dimen/size36"
+        android:layout_marginBottom="@dimen/size70"
+        />
+
+    <TextView
+        android:id="@+id/txtFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_f"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/font40"
+        />
+
+</LinearLayout>

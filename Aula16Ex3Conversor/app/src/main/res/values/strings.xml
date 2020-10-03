@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aula16Ex3Conversor</string>
+    <string name="celsius">Temperatura em °C</string>
+    <string name="digiteTemp">Digite a Temperatura</string>
+    <string name="converter">Converter</string>
+    <string name="x_f">x °F</string>
+</resources>
