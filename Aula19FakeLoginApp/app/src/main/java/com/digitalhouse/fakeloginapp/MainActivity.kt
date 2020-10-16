@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.digitalhouse.fakeloginapp.users.UserService
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
 import java.lang.Exception
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 //        UserService.logIn("felipe@mail.com", "123")
 
         btnCreateLogin.setOnClickListener {
+            etMailLogin.text?.clear()
+            etPassLogin.text?.clear()
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
@@ -38,7 +41,13 @@ class MainActivity : AppCompatActivity() {
                     intent.putExtra("NOME", nome)
                     startActivity(intent)
                 } catch (e:Exception) {
-                    Toast.makeText(this, "e-mail e/ou senha incorretos", Toast.LENGTH_LONG).show()
+                    Snackbar.make(telaLogin, "e-mail / senha incorretos", Snackbar.LENGTH_LONG)
+                        .setAction("Tentar novamente?") {
+                            // Responds to click on the action
+                        }
+                        .show()
+
+
                 }
 
 

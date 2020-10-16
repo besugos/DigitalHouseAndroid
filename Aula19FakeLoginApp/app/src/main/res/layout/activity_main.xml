@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorMain"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/telaLogin">
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,6 +20,8 @@
         android:textColor="@color/colorWhite"
         android:textSize="34sp"
         android:layout_marginTop="80dp"/>
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,28 +44,75 @@
         android:paddingStart="40dp"
         android:layout_gravity="center|center_vertical">
 
-        <EditText
-            android:id="@+id/etMailLogin"
+        <com.google.android.material.textfield.TextInputLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
-            android:singleLine="true"
-            android:inputType="textEmailAddress"
             android:textColorHint="@color/colorWhite"
-            android:backgroundTint="@color/colorWhite"
-            android:textColor="@color/colorWhite"
-            />
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            app:startIconTint="@color/colorWhite"
 
-        <EditText
-            android:id="@+id/etPassLogin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+
+                android:inputType="textEmailAddress"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/etMailLogin"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/email"-->
+<!--            android:singleLine="true"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:textColorHint="@color/colorWhite"-->
+<!--            android:backgroundTint="@color/colorWhite"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            />-->
+
+        <com.google.android.material.textfield.TextInputLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
-            android:inputType="textPassword"
             android:textColorHint="@color/colorWhite"
-            android:backgroundTint="@color/colorWhite"
-            android:textColor="@color/colorWhite"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/colorWhite"
+            app:startIconTint="@color/colorWhite"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:inputType="textPassword"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/etPassLogin"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/password"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:textColorHint="@color/colorWhite"-->
+<!--            android:backgroundTint="@color/colorWhite"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:layout_marginTop="20dp"/>-->
 
         <Button
             android:id="@+id/btnLogInLogin"
