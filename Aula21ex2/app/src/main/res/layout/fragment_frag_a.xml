@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragA"
+    android:padding="20dp"
+    >
+
+   <EditText
+       android:id="@+id/etNome"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/nome"
+       android:layout_marginTop="40dp"
+       android:autofillHints="@string/nome"
+       android:textSize="24sp"
+       android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etAno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ano_nasc"
+        android:layout_marginTop="40dp"
+        android:textSize="24sp"
+        android:autofillHints="@string/ano_nasc"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCalcula"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="24sp"
+        />
+
+</LinearLayout>
