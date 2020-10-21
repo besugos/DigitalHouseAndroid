@@ -8,7 +8,7 @@ import com.besugos.aula22exrick.api.Personagem
 class meuAdapter(private val personagens: List<Personagem>) :
     RecyclerView.Adapter<meuViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): meuViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_lista_nocard, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_lista_card, parent, false)
 
         return meuViewHolder(view)
     }
