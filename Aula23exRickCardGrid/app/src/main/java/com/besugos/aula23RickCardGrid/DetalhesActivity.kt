@@ -12,18 +12,18 @@ class DetalhesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalhes)
 
-        val imagem = intent.getStringExtra("IMAGEM")
-//        val nome = intent.getStringExtra("NOME")
-//        val planeta = intent.getStringExtra("PLANETA")
-//        val genero = intent.getStringExtra("GENERO")
+        val imagem = intent.getStringExtra("image")
+        val nome = intent.getStringExtra("name")
+        val planeta = intent.getStringExtra("planet")
+        val genero = intent.getStringExtra("gender")
 
-        //findViewById<TextView>(R.id.txtNome).text = nome
-        //findViewById<TextView>(R.id.txtPlaneta).text = nome
-        //findViewById<TextView>(R.id.txtGenero).text = nome
+        findViewById<TextView>(R.id.tvDetName).text = nome
+        findViewById<TextView>(R.id.tvDetPlanet).text = planeta
+        findViewById<TextView>(R.id.tvDetGender).text = genero
 
         Picasso.get()
             .load(imagem)
-            .into(findViewById<ImageView>(R.id.ivPic))
+            .into(findViewById<ImageView>(R.id.ivDetPic))
 
     }
 }

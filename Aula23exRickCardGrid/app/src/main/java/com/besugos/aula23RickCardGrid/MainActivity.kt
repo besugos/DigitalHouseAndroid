@@ -12,31 +12,6 @@ import com.besugos.aula23RickCardGrid.api.Personagem
 import com.besugos.aula23RickCardGrid.api.RickApi
 
 
-//class MainActivity : AppCompatActivity() {
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//
-//        val viewManager = GridLayoutManager(this, 2)
-//        val recyclerView = findViewById<RecyclerView>(R.id.rv_lista)
-//
-//        RickApi.getData(this, object : IRespostaDaApi {
-//            override fun obtevePersonagens(personagens: List<Personagem>) {
-//                val customAdapter = MeuAdapter(personagens)
-//
-//                with(recyclerView) {
-//                    setHasFixedSize(true)
-//                    layoutManager = viewManager
-//                    adapter = customAdapter
-//                    addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-//                }
-//            }
-//        })
-//    }
-//}
-
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,15 +31,17 @@ class MainActivity : AppCompatActivity() {
         var toast: Toast? = null
 
         val customAdapter = MeuAdapter(personagens) {
-            toast?.cancel()
+//            toast?.cancel()
+//
+//            toast = Toast.makeText(this@MainActivity, it.nome, Toast.LENGTH_LONG)
+//            toast?.show()
 
-            toast = Toast.makeText(this@MainActivity, it.nome, Toast.LENGTH_LONG)
-            toast?.show()
-
-            //var intent = Intent(this@MainActivity, DetalhesActivity::class.java)
-            //intent.putExtra("nome", it.nome)
-
-            //startActivity(intent)
+            var intent = Intent(this@MainActivity, DetalhesActivity::class.java)
+            intent.putExtra("name", it.nome)
+            intent.putExtra("image", it.imagemUrl)
+            intent.putExtra("planet", it.localizacao.nome)
+            intent.putExtra("gender", it.genero)
+            startActivity(intent)
 
         }
 

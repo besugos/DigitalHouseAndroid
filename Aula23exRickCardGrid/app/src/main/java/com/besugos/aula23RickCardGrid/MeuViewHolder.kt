@@ -12,18 +12,18 @@ class MeuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     private val ivImage: ImageView = view.findViewById(R.id.ivPic)
     private val tvName: TextView = view.findViewById(R.id.tv_name)
-//    private val tvStatus: TextView = view.findViewById(R.id.tv_status)
-//    private val tvSpecie : TextView = view.findViewById(R.id.tv_specie)
-//    private val tvLocation: TextView = view.findViewById(R.id.tv_location)
+    //private val tvStatus: TextView = view.findViewById(R.id.tv_status)
+    //private val tvSpecie : TextView = view.findViewById(R.id.tv_specie)
+    //private val tvLocation: TextView = view.findViewById(R.id.tv_location)
 
     fun bind(personagem: Personagem) {
 
         loadImage(personagem)
 
         tvName.text = personagem.nome
-//        tvStatus.text = personagem.status
-//        tvSpecie.text = personagem.especie
-//        tvLocation.text = personagem.localizacao.nome
+        //tvStatus.text = personagem.status
+        //tvSpecie.text = personagem.especie
+        //tvLocation.text = personagem.localizacao.nome
 
     }
 
