@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aula24exLogin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="agree">I agree to the Terms of Use</string>
+    <string name="sign_up">Sign UP</string>
+    <string name="log_in">Log in</string>
+    <string name="confirm_password">confirm password</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:paddingStart="36dp"
+    android:paddingEnd="36dp"
+    android:paddingBottom="110dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity"
+    android:id="@+id/acMain">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meu App"
+        android:fontFamily="sans-serif-black"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        />
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp"
+        android:backgroundTint="@color/cardview_light_background"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                app:tabTextColor="@color/colorAccent"
+                app:tabIndicatorColor="@color/colorAccent"
+
+                />
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
