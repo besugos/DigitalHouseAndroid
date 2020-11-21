@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.besugos.aula35ex1.listagem.view.CategoryFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_homeFragment_to_jokeFragment"
+            app:destination="@id/jokeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jokeFragment"
+        android:name="com.besugos.aula35ex1.piada.view.PiadaFragment"
+        android:label="fragment_joke"
+        tools:layout="@layout/fragment_piada" />
+</navigation>

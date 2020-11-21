@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".piada.view.PiadaFragment">
+
+    <ImageView
+        android:id="@+id/imgJoke"
+        android:layout_width="@dimen/dim_150_dp"
+        android:layout_height="@dimen/dim_150_dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtJoke"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtJoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/dim_24_sp"
+        android:layout_marginStart="@dimen/dim_16_dp"
+        android:layout_marginEnd="@dimen/dim_16_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgJoke"
+        app:layout_constraintVertical_bias="0.30"
+        tools:text="@string/hello_blank_fragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
