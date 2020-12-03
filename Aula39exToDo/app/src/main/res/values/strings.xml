@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aula39exToDo</string>
+    <string name="task_name">Task name</string>
+    <string name="add_task">ADD TASK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tarefa_1">Tarefa 1</string>
+</resources>
