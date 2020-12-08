@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aula41ex1</string>
+    <string name="splash">Splash</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="manter_me_conectado">Manter-me conectado</string>
+    <string name="login">LOGIN</string>
+</resources>
